@@ -6,10 +6,11 @@ namespace RepasoPersona.Test
 {
     public class PersonaTest
     {
+    
         public Persona Pepito { get; set; }//Se comoporta como una variable
 
         public PersonaTest() => Pepito = new Persona("Juan", "Gomez", 0, 2450043);
-
+        public Persona.Pepito.Cuentas()
         [Fact]
         public void Constructor()
         {
