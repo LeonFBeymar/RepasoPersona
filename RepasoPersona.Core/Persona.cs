@@ -21,7 +21,7 @@ namespace RepasoPersona.Core
             DNI = dni;
             Cuentas = new List<Cuenta>(); 
         } 
-        double TotalSaldoCuentas => Cuentas.Sum(c => c.Saldo );//propiedad
+        public double TotalSaldoCuentas => Cuentas.Sum(c => c.Saldo );//propiedad
 
     }
 }

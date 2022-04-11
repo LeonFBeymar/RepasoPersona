@@ -8,8 +8,14 @@ namespace RepasoPersona.Test
     {
         public Cuenta cuentita{get;set;}
         public PersonaTest personaTest{get;set;}
-        
-        public CuentaTest() => cuentita = new Cuenta(personaTest.Pepito,00000001);
+
+        public CuentaTest() => cuentita = new Cuenta(null,123456);
+
+        [Fact]
+        public void Constructor()
+        {
+            Assert.Equal(123456,cuentita.CBU);
+        }
         [Fact]
         public void AcreditarPositivo()
         {

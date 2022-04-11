@@ -1,6 +1,7 @@
 using System;
 using RepasoPersona.Core;
 using Xunit;
+using System.Collections.Generic;
 
 namespace RepasoPersona.Test
 {
@@ -8,16 +9,23 @@ namespace RepasoPersona.Test
     {
     
         public Persona Pepito { get; set; }//Se comoporta como una variable
-
+        public Cuenta Cuentita {get; set;}
+        
         public PersonaTest() => Pepito = new Persona("Juan", "Gomez", 0, 2450043);
-        public Persona.Pepito.Cuentas()
         [Fact]
-        public void Constructor()
+        public void Constructor()//metodo de prueba que se llama constructor
         {
             Assert.Equal("Juan", Pepito.Nombre);
             Assert.Equal("Gomez", Pepito.Apellido);
             Assert.Equal(0, Pepito.Saldo);
             Assert.Equal(2450043, Pepito.DNI);
+            
+        }
+        
+        [Fact]
+        public void ComprobarSaldo()
+        {
+            
         }
 
         [Fact]
