@@ -7,9 +7,8 @@ namespace RepasoPersona.Test
     public class CuentaTest
     {
         public Cuenta cuentita{get;set;}
-        public PersonaTest personaTest{get;set;}
 
-        public CuentaTest() => cuentita = new Cuenta(null,123456);
+        public CuentaTest() => cuentita = new Cuenta(123456,0);
 
         [Fact]
         public void Constructor()
@@ -22,7 +21,7 @@ namespace RepasoPersona.Test
             double esperado = 1000;
             cuentita.Acreditar(esperado);
             
-            Assert.Equal(esperado, cuentita.Saldo, 3);
+            Assert.Equal(esperado, cuentita.Saldo);
         }
 
         [Theory]
@@ -42,7 +41,7 @@ namespace RepasoPersona.Test
             cuentita.Acreditar(monto);
             cuentita.Debitar(debito);
 
-            Assert.Equal(monto - debito, cuentita.Saldo, 2);
+            Assert.Equal(monto - debito, cuentita.Saldo);
         }
 
         [Fact]

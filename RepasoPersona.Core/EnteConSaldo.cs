@@ -4,9 +4,6 @@ namespace RepasoPersona.Core
     public class EnteConSaldo
     {
         public virtual double Saldo { get; internal set; }// El virtual hace que se pueda modificar el valor de saldo en un futuro
-
-        public EnteConSaldo() => Saldo = 0;
-        public EnteConSaldo(double monto) => Saldo = monto;
         public void Debitar(double monto)
         {
             if (monto <= 0)

@@ -9,7 +9,6 @@ namespace RepasoPersona.Test
     {
     
         public Persona Pepito { get; set; }//Se comoporta como una variable
-        public Cuenta Cuentita {get; set;}
         
         public PersonaTest() => Pepito = new Persona("Juan", "Gomez", 0, 2450043);
         [Fact]
@@ -21,13 +20,6 @@ namespace RepasoPersona.Test
             Assert.Equal(2450043, Pepito.DNI);
             
         }
-        
-        [Fact]
-        public void ComprobarSaldo()
-        {
-            
-        }
-
         [Fact]
         public void AcreditarPositivo()
         {
@@ -69,6 +61,16 @@ namespace RepasoPersona.Test
         {
             var ex = Assert.Throws<ArgumentException>(() => Pepito.Debitar(0));
             Assert.Equal("El monto tiene que ser mayor a cero.", ex.Message);
+        }
+
+        public Cuenta cuenta1 { get; set; } 
+        public Cuenta cuenta2 { get; set; }
+        [Fact]
+        public double SumaCuentas()
+        {
+            cuenta1 = new Cuenta(1241, 400);
+            cuenta2 = new Cuenta(31241, 787);
+            return Pepito.TotalSaldoCuentas;
         }
     }
 }

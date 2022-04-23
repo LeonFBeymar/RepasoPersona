@@ -3,10 +3,13 @@ namespace RepasoPersona.Core
     public class Cuenta : EnteConSaldo
     {
         public int CBU { get; private set; }
-        Persona Cliente = new Persona();
-        public Cuenta(Persona cliente, int cbu)
+        public Persona Cliente {get; set;}
+        
+        public Cuenta( int cbu,double saldo)
         {
-            Cliente = cliente;
+            
+            Cliente = new Persona();
+            Saldo = saldo;
             CBU = cbu;
         } 
     }
