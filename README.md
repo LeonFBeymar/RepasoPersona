@@ -21,7 +21,7 @@
 
 # Título del Proyecto
 
-RepasoPesona
+Banco: POO y Unit Test
 
 ## Comenzando 🚀
 
