@@ -11,24 +11,24 @@
 
 ## Computación 2021
 
-**Asignatura**: <!-- REEMPLAZA este comentario por el nombre de la asignatura -->
+**Asignatura**: Programacion Sobre Redes
 
-**Nombre TP**: <!-- REEMPLAZA este comentario por el nombre del TP -->
+**Nombre TP**: Repaso Persona
 
-**Apellido y nombre Alumno**: <!-- REEMPLAZA este comentario por tu apellido y nombre -->
+**Apellido y nombre Alumno**: Leon Flores Beymar
 
-**Curso**: <!-- REEMPLAZA este comentario por tu curso -->
+**Curso**: 6to 7ma
 
 # Título del Proyecto
 
-_Acá va un párrafo que describa lo que es el proyecto._
+RepasoPesona
 
 ## Comenzando 🚀
 
 Clonar el repositorio github, desde Github Desktop o ejecutar en la terminal o CMD:
 <!-- cambia el link de abajo al de tu repositorio y BORRA ESTE COMENTARIO -->
 ```
-git clone https://github.com/ET12DE1Computacion/simpleTemplateCSharp
+git clone https://github.com/LeonFBeymar/RepasoPersona
 ```
 
 ### Pre-requisitos 📋
@@ -53,8 +53,7 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-* **Max Power** - *Desarrollo* - [Maxpower](https://github.com/maxpower)
-* **Cosme Fulanito** - *Documentación* - [Cosmefulanito](#Cosmefulanito)
+* **Leon Beymar** - *Desarrollo* - [Leon Beymar](https://github.com/LeonFBeymar/RepasoPersona)
 
 ## Licencia 📄
 
